@@ -75,24 +75,7 @@
             "attributeValue": "#/entitySearch/#!/entitySearchLanding",
             "selected": false
           },
-          {
-            "attributeId": 2905910,
-            "attributeName": "Onboarding",
-            "attributeValue": "#/enrich/onBoard",
-            "selected": false
-          },
-          {
-            "attributeId": 2905911,
-            "attributeName": "Policy Enforcement",
-            "attributeValue": "#/Policy Enforcement",
-            "selected": false
-          },
-          {
-            "attributeId": 2905912,
-            "attributeName": "Orchestration",
-            "attributeValue": "#/elementbpm/#/",
-            "selected": false
-          },
+       
           {
             "attributeId": 2905913,
             "attributeName": "Data Curation",
@@ -138,60 +121,7 @@
         "validation": null,
         "systemSettingType": "GENERAL_SETTING",
         "options": null,
-        "customerLogoImage": null
-      },
-      {
-        "settingId": 2905919,
-        "name": "Allow checklist",
-        "section": "defaults",
-        "type": "Toggle On/Off",
-        "maximumLength": 0,
-        "selectedValue": "On",
-        "required": false,
-        "defaultValue": "On",
-        "validation": null,
-        "systemSettingType": "GENERAL_SETTING",
-        "options": null,
-        "customerLogoImage": null
-      },
-      {
-        "settingId": 2905920,
-        "name": "Questionnaries",
-        "section": "defaults",
-        "type": "dropdown",
-        "maximumLength": 0,
-        "selectedValue": "612",
-        "required": false,
-        "defaultValue": "612",
-        "validation": null,
-        "systemSettingType": "GENERAL_SETTING",
-        "options": [
-          {
-            "attributeId": 367223,
-            "attributeName": "Questionnaire Builder",
-            "attributeValue": "http://52.211.59.166/element-questionnaire-builder/index.php367223?newtest=Y&lang=en",
-            "selected": false
-          },
-          {
-            "attributeId": 342162,
-            "attributeName": "Questionnaire builder for 159",
-            "attributeValue": "http://52.211.59.166/element-questionnaire-builder/index.php342162?newtest=Y&lang=en",
-            "selected": false
-          },
-          {
-            "attributeId": 531697,
-            "attributeName": "Compliance Checklist",
-            "attributeValue": "http://52.211.59.166/element-questionnaire-builder/index.php531697?newtest=Y&lang=en",
-            "selected": false
-          },
-          {
-            "attributeId": 612,
-            "attributeName": "Prashant Updated List",
-            "attributeValue": "http://52.211.59.166/element-questionnaire-builder/index.php612?newtest=Y&lang=en",
-            "selected": true
-          }
-        ],
-        "customerLogoImage": null
+        "customerLogoImage": null      
       },
       {
         "settingId": 2905929,
@@ -333,34 +263,6 @@
       {
         "settingId": 2961443,
         "name": "pdf",
-        "section": "File Settings",
-        "type": "Toggle On/Off",
-        "maximumLength": 0,
-        "selectedValue": "On",
-        "required": false,
-        "defaultValue": "On",
-        "validation": null,
-        "systemSettingType": "GENERAL_SETTING",
-        "options": null,
-        "customerLogoImage": null
-      },
-      {
-        "settingId": 2961444,
-        "name": "xlsx",
-        "section": "File Settings",
-        "type": "Toggle On/Off",
-        "maximumLength": 0,
-        "selectedValue": "On",
-        "required": false,
-        "defaultValue": "On",
-        "validation": null,
-        "systemSettingType": "GENERAL_SETTING",
-        "options": null,
-        "customerLogoImage": null
-      },
-      {
-        "settingId": 2961445,
-        "name": "txt",
         "section": "File Settings",
         "type": "Toggle On/Off",
         "maximumLength": 0,
