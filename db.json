@@ -1,32 +1,6 @@
 {
     "General Settings": [
-       {
-        "settingId": 2905900,
-        "name": "Dashboard View",
-        "section": "defaults",
-        "type": "Dropdown",
-        "maximumLength": 0,
-        "selectedValue": "default",
-        "required": false,
-        "defaultValue": null,
-        "validation": null,
-        "systemSettingType": "GENERAL_SETTING",
-        "options": [
-          {
-            "attributeId": 2905901,
-            "attributeName": "default",
-            "attributeValue": "",
-            "selected": true
-          },
-          {
-            "attributeId": 2905902,
-            "attributeName": "underwriting",
-            "attributeValue": "",
-            "selected": false
-          }
-        ],
-        "customerLogoImage": null
-      },
+      
       {
         "settingId": 2905903,
         "name": "Default Module",
@@ -141,34 +115,7 @@
           }
         ],
         "customerLogoImage": null
-      },
-      {
-        "settingId": 2905933,
-        "name": "Report Comments",
-        "section": "defaults",
-        "type": "dropdown",
-        "maximumLength": 0,
-        "selectedValue": "Showing the latest Comments",
-        "required": false,
-        "defaultValue": null,
-        "validation": null,
-        "systemSettingType": "GENERAL_SETTING",
-        "options": [
-          {
-            "attributeId": 2905934,
-            "attributeName": "Showing the latest Comments",
-            "attributeValue": "",
-            "selected": true
-          },
-          {
-            "attributeId": 2905935,
-            "attributeName": "Showing all Comments",
-            "attributeValue": "",
-            "selected": false
-          }
-        ],
-        "customerLogoImage": null
-      },   
+      }
     ],
     "Mail Settings": [
       {
@@ -198,34 +145,6 @@
         "systemSettingType": "MAIL_SETTING",
         "options": null,
         "customerLogoImage": null
-      },
-      {
-        "settingId": 2905923,
-        "name": "SSL",
-        "section": "Account Settings",
-        "type": "Toggle On/Off",
-        "maximumLength": 0,
-        "selectedValue": "On",
-        "required": false,
-        "defaultValue": null,
-        "validation": null,
-        "systemSettingType": "MAIL_SETTING",
-        "options": null,
-        "customerLogoImage": null
-      },
-      {
-        "settingId": 2905924,
-        "name": "Enable Authentication",
-        "section": "Authentication",
-        "type": "Toggle On/Off",
-        "maximumLength": 0,
-        "selectedValue": "On",
-        "required": false,
-        "defaultValue": null,
-        "validation": null,
-        "systemSettingType": "MAIL_SETTING",
-        "options": null,
-        "customerLogoImage": null
-      }  
+      }
     ]
   }
