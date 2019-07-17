@@ -1,66 +1,6 @@
 {
     "General Settings": [
-      {
-        "settingId": 2905893,
-        "name": "Company View",
-        "section": "defaults",
-        "type": "Dropdown",
-        "maximumLength": 0,
-        "selectedValue": "default",
-        "required": false,
-        "defaultValue": null,
-        "validation": null,
-        "systemSettingType": "GENERAL_SETTING",
-        "options": [
-          {
-            "attributeId": 2905894,
-            "attributeName": "default",
-            "attributeValue": "",
-            "selected": true
-          },
-          {
-            "attributeId": 2905895,
-            "attributeName": "underwriting",
-            "attributeValue": "",
-            "selected": false
-          },
-          {
-            "attributeId": 2905896,
-            "attributeName": "compliance",
-            "attributeValue": "",
-            "selected": false
-          }
-        ],
-        "customerLogoImage": null
-      },
-      {
-        "settingId": 2905897,
-        "name": "Case View",
-        "section": "defaults",
-        "type": "Dropdown",
-        "maximumLength": 0,
-        "selectedValue": "default",
-        "required": false,
-        "defaultValue": null,
-        "validation": null,
-        "systemSettingType": "GENERAL_SETTING",
-        "options": [
-          {
-            "attributeId": 2905898,
-            "attributeName": "default",
-            "attributeValue": "",
-            "selected": true
-          },
-          {
-            "attributeId": 2905899,
-            "attributeName": "underwriting",
-            "attributeValue": "",
-            "selected": false
-          }
-        ],
-        "customerLogoImage": null
-      },
-      {
+       {
         "settingId": 2905900,
         "name": "Dashboard View",
         "section": "defaults",
@@ -601,62 +541,6 @@
         "systemSettingType": "MAIL_SETTING",
         "options": null,
         "customerLogoImage": null
-      },
-      {
-        "settingId": 2905925,
-        "name": "User",
-        "section": "Authentication",
-        "type": "Text",
-        "maximumLength": 30,
-        "selectedValue": "admin",
-        "required": true,
-        "defaultValue": null,
-        "validation": "",
-        "systemSettingType": "MAIL_SETTING",
-        "options": null,
-        "customerLogoImage": null
-      },
-      {
-        "settingId": 2905926,
-        "name": "Password",
-        "section": "Authentication",
-        "type": "Password",
-        "maximumLength": 30,
-        "selectedValue": "bst@56LKX#",
-        "required": true,
-        "defaultValue": null,
-        "validation": "Password rules as specified below",
-        "systemSettingType": "MAIL_SETTING",
-        "options": null,
-        "customerLogoImage": null
-      },
-      {
-        "settingId": 2905927,
-        "name": "Retype Password",
-        "section": "Authentication",
-        "type": "Password",
-        "maximumLength": 30,
-        "selectedValue": "",
-        "required": true,
-        "defaultValue": null,
-        "validation": "Must much to Password field incase Password field is valid",
-        "systemSettingType": "MAIL_SETTING",
-        "options": null,
-        "customerLogoImage": null
-      },
-      {
-        "settingId": 2905928,
-        "name": "From",
-        "section": "General",
-        "type": "Text",
-        "maximumLength": 50,
-        "selectedValue": "{companyName@CompanyDomain}",
-        "required": true,
-        "defaultValue": null,
-        "validation": "Email address validator",
-        "systemSettingType": "MAIL_SETTING",
-        "options": null,
-        "customerLogoImage": null
-      }
+      }  
     ]
   }
