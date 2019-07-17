@@ -1,84 +1,662 @@
-     {
-            "products": [
-                {
-                "id": 1,
-                "name": "Product001",
-                "cost": 10.0,
-                "quantity": 1000,
-                "locationId" : 1,
-                "familyId" : 1
-                },
-                {
-                "id": 2,
-                "name": "Product002",
-                "cost": 20.0,
-                "quantity": 2000,
-                "locationId" : 1,
-                "familyId" : 2
-                },   
-                {
-                "id": 3,
-                "name": "Product003",
-                "cost": 30.0,
-                "quantity": 3000,
-                "locationId" : 3,
-                "familyId" : 2     
-                },
-                {
-                "id": 4,
-                "name": "Product004",
-                "cost": 40.0,
-                "quantity": 4000,
-                "locationId" : 2,
-                "familyId" : 3
-                }
-            ],
-            "locations":[
-                {
-                "id": 1,
-                "name": "Location001"
-                },
-                {
-                "id": 2,
-                "name": "Location002"
-                },
-                {
-                "id": 3,
-                "name": "Location003"
-                }
-            ],
-            "families":[
-                {
-                "id": 1,
-                "name": "FM001"
-                },
-                {
-                "id": 2,
-                "name": "FM002"
-                },
-                {
-                "id": 3,
-                "name": "FM003"
-                }
-            ],
-            "transactions":[
-                {
-                "id": 1,
-                "cost":11,
-                "quantity":10,
-                "productId":1
-                },
-                {
-                "id": 2,
-                "cost":12,
-                "quantity":100,
-                "productId":2
-                },    
-                {
-                "id": 3,
-                "cost":15,
-                "quantity":101,
-                "productId":3
-                }  
-            ]
-            }
+{
+    "General Settings": [
+      {
+        "settingId": 2905893,
+        "name": "Company View",
+        "section": "defaults",
+        "type": "Dropdown",
+        "maximumLength": 0,
+        "selectedValue": "default",
+        "required": false,
+        "defaultValue": null,
+        "validation": null,
+        "systemSettingType": "GENERAL_SETTING",
+        "options": [
+          {
+            "attributeId": 2905894,
+            "attributeName": "default",
+            "attributeValue": "",
+            "selected": true
+          },
+          {
+            "attributeId": 2905895,
+            "attributeName": "underwriting",
+            "attributeValue": "",
+            "selected": false
+          },
+          {
+            "attributeId": 2905896,
+            "attributeName": "compliance",
+            "attributeValue": "",
+            "selected": false
+          }
+        ],
+        "customerLogoImage": null
+      },
+      {
+        "settingId": 2905897,
+        "name": "Case View",
+        "section": "defaults",
+        "type": "Dropdown",
+        "maximumLength": 0,
+        "selectedValue": "default",
+        "required": false,
+        "defaultValue": null,
+        "validation": null,
+        "systemSettingType": "GENERAL_SETTING",
+        "options": [
+          {
+            "attributeId": 2905898,
+            "attributeName": "default",
+            "attributeValue": "",
+            "selected": true
+          },
+          {
+            "attributeId": 2905899,
+            "attributeName": "underwriting",
+            "attributeValue": "",
+            "selected": false
+          }
+        ],
+        "customerLogoImage": null
+      },
+      {
+        "settingId": 2905900,
+        "name": "Dashboard View",
+        "section": "defaults",
+        "type": "Dropdown",
+        "maximumLength": 0,
+        "selectedValue": "default",
+        "required": false,
+        "defaultValue": null,
+        "validation": null,
+        "systemSettingType": "GENERAL_SETTING",
+        "options": [
+          {
+            "attributeId": 2905901,
+            "attributeName": "default",
+            "attributeValue": "",
+            "selected": true
+          },
+          {
+            "attributeId": 2905902,
+            "attributeName": "underwriting",
+            "attributeValue": "",
+            "selected": false
+          }
+        ],
+        "customerLogoImage": null
+      },
+      {
+        "settingId": 2905903,
+        "name": "Default Module",
+        "section": "defaults",
+        "type": "Dropdown",
+        "maximumLength": 0,
+        "selectedValue": "None",
+        "required": false,
+        "defaultValue": null,
+        "validation": null,
+        "systemSettingType": "GENERAL_SETTING",
+        "options": [
+          {
+            "attributeId": 2905904,
+            "attributeName": "Advanced Search",
+            "attributeValue": "#/enrich",
+            "selected": false
+          },
+          {
+            "attributeId": 2905905,
+            "attributeName": "Dashboard",
+            "attributeValue": "#/discover",
+            "selected": false
+          },
+          {
+            "attributeId": 2905906,
+            "attributeName": "Lead Generation",
+            "attributeValue": "#/leadGeneration/#!/landing",
+            "selected": false
+          },
+          {
+            "attributeId": 2905907,
+            "attributeName": "Transaction Intelligence",
+            "attributeValue": "#/transactionIntelligence/#!/alertDashboard",
+            "selected": false
+          },
+          {
+            "attributeId": 2905908,
+            "attributeName": "Underwriting",
+            "attributeValue": "#/uploadDocuments/#!/landing",
+            "selected": false
+          },
+          {
+            "attributeId": 2905909,
+            "attributeName": "Search",
+            "attributeValue": "#/entitySearch/#!/entitySearchLanding",
+            "selected": false
+          },
+          {
+            "attributeId": 2905910,
+            "attributeName": "Onboarding",
+            "attributeValue": "#/enrich/onBoard",
+            "selected": false
+          },
+          {
+            "attributeId": 2905911,
+            "attributeName": "Policy Enforcement",
+            "attributeValue": "#/Policy Enforcement",
+            "selected": false
+          },
+          {
+            "attributeId": 2905912,
+            "attributeName": "Orchestration",
+            "attributeValue": "#/elementbpm/#/",
+            "selected": false
+          },
+          {
+            "attributeId": 2905913,
+            "attributeName": "Data Curation",
+            "attributeValue": "#/dataCuration",
+            "selected": false
+          },
+          {
+            "attributeId": 2905914,
+            "attributeName": "Fraud",
+            "attributeValue": "#/transactionIntelligence/#!/alertDashboard",
+            "selected": false
+          },
+          {
+            "attributeId": 2905915,
+            "attributeName": "Big Data Science Platform",
+            "attributeValue": "#/workflow/#!/",
+            "selected": false
+          },
+          {
+            "attributeId": 2905916,
+            "attributeName": "Questionnaire Builder",
+            "attributeValue": "#/Questionnaire Builder",
+            "selected": false
+          },
+          {
+            "attributeId": 2905917,
+            "attributeName": "None",
+            "attributeValue": "/",
+            "selected": true
+          }
+        ],
+        "customerLogoImage": null
+      },
+      {
+        "settingId": 2905918,
+        "name": "Open link in a new tab",
+        "section": "User Interaction",
+        "type": "Toggle On/Off",
+        "maximumLength": 0,
+        "selectedValue": "On",
+        "required": false,
+        "defaultValue": "On",
+        "validation": null,
+        "systemSettingType": "GENERAL_SETTING",
+        "options": null,
+        "customerLogoImage": null
+      },
+      {
+        "settingId": 2905919,
+        "name": "Allow checklist",
+        "section": "defaults",
+        "type": "Toggle On/Off",
+        "maximumLength": 0,
+        "selectedValue": "On",
+        "required": false,
+        "defaultValue": "On",
+        "validation": null,
+        "systemSettingType": "GENERAL_SETTING",
+        "options": null,
+        "customerLogoImage": null
+      },
+      {
+        "settingId": 2905920,
+        "name": "Questionnaries",
+        "section": "defaults",
+        "type": "dropdown",
+        "maximumLength": 0,
+        "selectedValue": "612",
+        "required": false,
+        "defaultValue": "612",
+        "validation": null,
+        "systemSettingType": "GENERAL_SETTING",
+        "options": [
+          {
+            "attributeId": 367223,
+            "attributeName": "Questionnaire Builder",
+            "attributeValue": "http://52.211.59.166/element-questionnaire-builder/index.php367223?newtest=Y&lang=en",
+            "selected": false
+          },
+          {
+            "attributeId": 342162,
+            "attributeName": "Questionnaire builder for 159",
+            "attributeValue": "http://52.211.59.166/element-questionnaire-builder/index.php342162?newtest=Y&lang=en",
+            "selected": false
+          },
+          {
+            "attributeId": 531697,
+            "attributeName": "Compliance Checklist",
+            "attributeValue": "http://52.211.59.166/element-questionnaire-builder/index.php531697?newtest=Y&lang=en",
+            "selected": false
+          },
+          {
+            "attributeId": 612,
+            "attributeName": "Prashant Updated List",
+            "attributeValue": "http://52.211.59.166/element-questionnaire-builder/index.php612?newtest=Y&lang=en",
+            "selected": true
+          }
+        ],
+        "customerLogoImage": null
+      },
+      {
+        "settingId": 2905929,
+        "name": "Company Logo",
+        "section": "Branding",
+        "type": "",
+        "maximumLength": 0,
+        "selectedValue": "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",
+        "required": false,
+        "defaultValue": "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",
+        "validation": null,
+        "systemSettingType": "GENERAL_SETTING",
+        "options": null,
+        "customerLogoImage": "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"
+      },
+      {
+        "settingId": 2905930,
+        "name": "Compliance Report",
+        "section": "defaults",
+        "type": "dropdown",
+        "maximumLength": 0,
+        "selectedValue": "Genpact V2",
+        "required": false,
+        "defaultValue": null,
+        "validation": null,
+        "systemSettingType": "GENERAL_SETTING",
+        "options": [
+          {
+            "attributeId": 2905931,
+            "attributeName": "default",
+            "attributeValue": "",
+            "selected": false
+          },
+          {
+            "attributeId": 2905932,
+            "attributeName": "Genpact",
+            "attributeValue": "GP Compliance",
+            "selected": false
+          },
+          {
+            "attributeId": 2905936,
+            "attributeName": "Genpact V2",
+            "attributeValue": "GP Compliance V2",
+            "selected": true
+          }
+        ],
+        "customerLogoImage": null
+      },
+      {
+        "settingId": 2905933,
+        "name": "Report Comments",
+        "section": "defaults",
+        "type": "dropdown",
+        "maximumLength": 0,
+        "selectedValue": "Showing the latest Comments",
+        "required": false,
+        "defaultValue": null,
+        "validation": null,
+        "systemSettingType": "GENERAL_SETTING",
+        "options": [
+          {
+            "attributeId": 2905934,
+            "attributeName": "Showing the latest Comments",
+            "attributeValue": "",
+            "selected": true
+          },
+          {
+            "attributeId": 2905935,
+            "attributeName": "Showing all Comments",
+            "attributeValue": "",
+            "selected": false
+          }
+        ],
+        "customerLogoImage": null
+      },
+      {
+        "settingId": 2961434,
+        "name": "Maximum file size allowed",
+        "section": "File Settings",
+        "type": "Dropdown",
+        "maximumLength": 0,
+        "selectedValue": "25MB",
+        "required": false,
+        "defaultValue": null,
+        "validation": null,
+        "systemSettingType": "GENERAL_SETTING",
+        "options": [
+          {
+            "attributeId": 2961435,
+            "attributeName": "20MB",
+            "attributeValue": "20MB",
+            "selected": false
+          },
+          {
+            "attributeId": 2961436,
+            "attributeName": "5MB",
+            "attributeValue": "5MB",
+            "selected": false
+          },
+          {
+            "attributeId": 2961437,
+            "attributeName": "10MB",
+            "attributeValue": "10MB",
+            "selected": false
+          },
+          {
+            "attributeId": 2961438,
+            "attributeName": "15MB",
+            "attributeValue": "15MB",
+            "selected": false
+          },
+          {
+            "attributeId": 2961439,
+            "attributeName": "25MB",
+            "attributeValue": "25MB",
+            "selected": true
+          },
+          {
+            "attributeId": 2961440,
+            "attributeName": "30MB",
+            "attributeValue": "30MB",
+            "selected": false
+          },
+          {
+            "attributeId": 2961441,
+            "attributeName": "50MB",
+            "attributeValue": "50MB",
+            "selected": false
+          },
+          {
+            "attributeId": 2961442,
+            "attributeName": "100MB",
+            "attributeValue": "100MB",
+            "selected": false
+          }
+        ],
+        "customerLogoImage": null
+      },
+      {
+        "settingId": 2961443,
+        "name": "pdf",
+        "section": "File Settings",
+        "type": "Toggle On/Off",
+        "maximumLength": 0,
+        "selectedValue": "On",
+        "required": false,
+        "defaultValue": "On",
+        "validation": null,
+        "systemSettingType": "GENERAL_SETTING",
+        "options": null,
+        "customerLogoImage": null
+      },
+      {
+        "settingId": 2961444,
+        "name": "xlsx",
+        "section": "File Settings",
+        "type": "Toggle On/Off",
+        "maximumLength": 0,
+        "selectedValue": "On",
+        "required": false,
+        "defaultValue": "On",
+        "validation": null,
+        "systemSettingType": "GENERAL_SETTING",
+        "options": null,
+        "customerLogoImage": null
+      },
+      {
+        "settingId": 2961445,
+        "name": "txt",
+        "section": "File Settings",
+        "type": "Toggle On/Off",
+        "maximumLength": 0,
+        "selectedValue": "On",
+        "required": false,
+        "defaultValue": "On",
+        "validation": null,
+        "systemSettingType": "GENERAL_SETTING",
+        "options": null,
+        "customerLogoImage": null
+      },
+      {
+        "settingId": 2961446,
+        "name": "jpg",
+        "section": "File Settings",
+        "type": "Toggle On/Off",
+        "maximumLength": 0,
+        "selectedValue": "On",
+        "required": false,
+        "defaultValue": "On",
+        "validation": null,
+        "systemSettingType": "GENERAL_SETTING",
+        "options": null,
+        "customerLogoImage": null
+      },
+      {
+        "settingId": 2961447,
+        "name": "png",
+        "section": "File Settings",
+        "type": "Toggle On/Off",
+        "maximumLength": 0,
+        "selectedValue": "On",
+        "required": false,
+        "defaultValue": "On",
+        "validation": null,
+        "systemSettingType": "GENERAL_SETTING",
+        "options": null,
+        "customerLogoImage": null
+      },
+      {
+        "settingId": 2961448,
+        "name": "docx",
+        "section": "File Settings",
+        "type": "Toggle On/Off",
+        "maximumLength": 0,
+        "selectedValue": "On",
+        "required": false,
+        "defaultValue": "On",
+        "validation": null,
+        "systemSettingType": "GENERAL_SETTING",
+        "options": null,
+        "customerLogoImage": null
+      },
+      {
+        "settingId": 2961449,
+        "name": "csv",
+        "section": "File Settings",
+        "type": "Toggle On/Off",
+        "maximumLength": 0,
+        "selectedValue": "On",
+        "required": false,
+        "defaultValue": "On",
+        "validation": null,
+        "systemSettingType": "GENERAL_SETTING",
+        "options": null,
+        "customerLogoImage": null
+      },
+      {
+        "settingId": 2961450,
+        "name": "gif",
+        "section": "File Settings",
+        "type": "Toggle On/Off",
+        "maximumLength": 0,
+        "selectedValue": "On",
+        "required": false,
+        "defaultValue": "On",
+        "validation": null,
+        "systemSettingType": "GENERAL_SETTING",
+        "options": null,
+        "customerLogoImage": null
+      },
+      {
+        "settingId": 2961451,
+        "name": "rtf",
+        "section": "File Settings",
+        "type": "Toggle On/Off",
+        "maximumLength": 0,
+        "selectedValue": "On",
+        "required": false,
+        "defaultValue": "On",
+        "validation": null,
+        "systemSettingType": "GENERAL_SETTING",
+        "options": null,
+        "customerLogoImage": null
+      },
+      {
+        "settingId": 2961452,
+        "name": "tiff",
+        "section": "File Settings",
+        "type": "Toggle On/Off",
+        "maximumLength": 0,
+        "selectedValue": "On",
+        "required": false,
+        "defaultValue": "On",
+        "validation": null,
+        "systemSettingType": "GENERAL_SETTING",
+        "options": null,
+        "customerLogoImage": null
+      },
+      {
+        "settingId": 2963808,
+        "name": "snt",
+        "section": "File Settings",
+        "type": "Toggle On/Off",
+        "maximumLength": 0,
+        "selectedValue": "On",
+        "required": false,
+        "defaultValue": "On",
+        "validation": null,
+        "systemSettingType": "GENERAL_SETTING",
+        "options": null,
+        "customerLogoImage": null
+      }
+    ],
+    "Mail Settings": [
+      {
+        "settingId": 2905921,
+        "name": "Outbound SMTP Server",
+        "section": "Account Settings",
+        "type": "Text",
+        "maximumLength": 100,
+        "selectedValue": "",
+        "required": true,
+        "defaultValue": null,
+        "validation": "Server/IP validator",
+        "systemSettingType": "MAIL_SETTING",
+        "options": null,
+        "customerLogoImage": null
+      },
+      {
+        "settingId": 2905922,
+        "name": "Port",
+        "section": "Account Settings",
+        "type": "Text",
+        "maximumLength": 4,
+        "selectedValue": "25",
+        "required": true,
+        "defaultValue": null,
+        "validation": "Numeric",
+        "systemSettingType": "MAIL_SETTING",
+        "options": null,
+        "customerLogoImage": null
+      },
+      {
+        "settingId": 2905923,
+        "name": "SSL",
+        "section": "Account Settings",
+        "type": "Toggle On/Off",
+        "maximumLength": 0,
+        "selectedValue": "On",
+        "required": false,
+        "defaultValue": null,
+        "validation": null,
+        "systemSettingType": "MAIL_SETTING",
+        "options": null,
+        "customerLogoImage": null
+      },
+      {
+        "settingId": 2905924,
+        "name": "Enable Authentication",
+        "section": "Authentication",
+        "type": "Toggle On/Off",
+        "maximumLength": 0,
+        "selectedValue": "On",
+        "required": false,
+        "defaultValue": null,
+        "validation": null,
+        "systemSettingType": "MAIL_SETTING",
+        "options": null,
+        "customerLogoImage": null
+      },
+      {
+        "settingId": 2905925,
+        "name": "User",
+        "section": "Authentication",
+        "type": "Text",
+        "maximumLength": 30,
+        "selectedValue": "admin",
+        "required": true,
+        "defaultValue": null,
+        "validation": "",
+        "systemSettingType": "MAIL_SETTING",
+        "options": null,
+        "customerLogoImage": null
+      },
+      {
+        "settingId": 2905926,
+        "name": "Password",
+        "section": "Authentication",
+        "type": "Password",
+        "maximumLength": 30,
+        "selectedValue": "bst@56LKX#",
+        "required": true,
+        "defaultValue": null,
+        "validation": "Password rules as specified below",
+        "systemSettingType": "MAIL_SETTING",
+        "options": null,
+        "customerLogoImage": null
+      },
+      {
+        "settingId": 2905927,
+        "name": "Retype Password",
+        "section": "Authentication",
+        "type": "Password",
+        "maximumLength": 30,
+        "selectedValue": "",
+        "required": true,
+        "defaultValue": null,
+        "validation": "Must much to Password field incase Password field is valid",
+        "systemSettingType": "MAIL_SETTING",
+        "options": null,
+        "customerLogoImage": null
+      },
+      {
+        "settingId": 2905928,
+        "name": "From",
+        "section": "General",
+        "type": "Text",
+        "maximumLength": 50,
+        "selectedValue": "{companyName@CompanyDomain}",
+        "required": true,
+        "defaultValue": null,
+        "validation": "Email address validator",
+        "systemSettingType": "MAIL_SETTING",
+        "options": null,
+        "customerLogoImage": null
+      }
+    ]
+  }
