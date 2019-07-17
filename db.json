@@ -110,34 +110,6 @@
         "customerLogoImage": null
       },
       {
-        "settingId": 2905918,
-        "name": "Open link in a new tab",
-        "section": "User Interaction",
-        "type": "Toggle On/Off",
-        "maximumLength": 0,
-        "selectedValue": "On",
-        "required": false,
-        "defaultValue": "On",
-        "validation": null,
-        "systemSettingType": "GENERAL_SETTING",
-        "options": null,
-        "customerLogoImage": null      
-      },
-      {
-        "settingId": 2905929,
-        "name": "Company Logo",
-        "section": "Branding",
-        "type": "",
-        "maximumLength": 0,
-        "selectedValue": "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",
-        "required": false,
-        "defaultValue": "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",
-        "validation": null,
-        "systemSettingType": "GENERAL_SETTING",
-        "options": null,
-        "customerLogoImage": "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"
-      },
-      {
         "settingId": 2905930,
         "name": "Compliance Report",
         "section": "defaults",
@@ -196,77 +168,7 @@
           }
         ],
         "customerLogoImage": null
-      },     
-      {
-        "settingId": 2961443,
-        "name": "pdf",
-        "section": "File Settings",
-        "type": "Toggle On/Off",
-        "maximumLength": 0,
-        "selectedValue": "On",
-        "required": false,
-        "defaultValue": "On",
-        "validation": null,
-        "systemSettingType": "GENERAL_SETTING",
-        "options": null,
-        "customerLogoImage": null
-      },
-      {
-        "settingId": 2961448,
-        "name": "docx",
-        "section": "File Settings",
-        "type": "Toggle On/Off",
-        "maximumLength": 0,
-        "selectedValue": "On",
-        "required": false,
-        "defaultValue": "On",
-        "validation": null,
-        "systemSettingType": "GENERAL_SETTING",
-        "options": null,
-        "customerLogoImage": null
-      },
-      {
-        "settingId": 2961449,
-        "name": "csv",
-        "section": "File Settings",
-        "type": "Toggle On/Off",
-        "maximumLength": 0,
-        "selectedValue": "On",
-        "required": false,
-        "defaultValue": "On",
-        "validation": null,
-        "systemSettingType": "GENERAL_SETTING",
-        "options": null,
-        "customerLogoImage": null
-      },
-      {
-        "settingId": 2961450,
-        "name": "gif",
-        "section": "File Settings",
-        "type": "Toggle On/Off",
-        "maximumLength": 0,
-        "selectedValue": "On",
-        "required": false,
-        "defaultValue": "On",
-        "validation": null,
-        "systemSettingType": "GENERAL_SETTING",
-        "options": null,
-        "customerLogoImage": null
-      },
-      {
-        "settingId": 2963808,
-        "name": "snt",
-        "section": "File Settings",
-        "type": "Toggle On/Off",
-        "maximumLength": 0,
-        "selectedValue": "On",
-        "required": false,
-        "defaultValue": "On",
-        "validation": null,
-        "systemSettingType": "GENERAL_SETTING",
-        "options": null,
-        "customerLogoImage": null
-      }
+      },   
     ],
     "Mail Settings": [
       {
