@@ -196,101 +196,10 @@
           }
         ],
         "customerLogoImage": null
-      },
-      {
-        "settingId": 2961434,
-        "name": "Maximum file size allowed",
-        "section": "File Settings",
-        "type": "Dropdown",
-        "maximumLength": 0,
-        "selectedValue": "25MB",
-        "required": false,
-        "defaultValue": null,
-        "validation": null,
-        "systemSettingType": "GENERAL_SETTING",
-        "options": [
-          {
-            "attributeId": 2961435,
-            "attributeName": "20MB",
-            "attributeValue": "20MB",
-            "selected": false
-          },
-          {
-            "attributeId": 2961436,
-            "attributeName": "5MB",
-            "attributeValue": "5MB",
-            "selected": false
-          },
-          {
-            "attributeId": 2961437,
-            "attributeName": "10MB",
-            "attributeValue": "10MB",
-            "selected": false
-          },
-          {
-            "attributeId": 2961438,
-            "attributeName": "15MB",
-            "attributeValue": "15MB",
-            "selected": false
-          },
-          {
-            "attributeId": 2961439,
-            "attributeName": "25MB",
-            "attributeValue": "25MB",
-            "selected": true
-          },
-          {
-            "attributeId": 2961440,
-            "attributeName": "30MB",
-            "attributeValue": "30MB",
-            "selected": false
-          },
-          {
-            "attributeId": 2961441,
-            "attributeName": "50MB",
-            "attributeValue": "50MB",
-            "selected": false
-          },
-          {
-            "attributeId": 2961442,
-            "attributeName": "100MB",
-            "attributeValue": "100MB",
-            "selected": false
-          }
-        ],
-        "customerLogoImage": null
-      },
+      },     
       {
         "settingId": 2961443,
         "name": "pdf",
-        "section": "File Settings",
-        "type": "Toggle On/Off",
-        "maximumLength": 0,
-        "selectedValue": "On",
-        "required": false,
-        "defaultValue": "On",
-        "validation": null,
-        "systemSettingType": "GENERAL_SETTING",
-        "options": null,
-        "customerLogoImage": null
-      },
-      {
-        "settingId": 2961446,
-        "name": "jpg",
-        "section": "File Settings",
-        "type": "Toggle On/Off",
-        "maximumLength": 0,
-        "selectedValue": "On",
-        "required": false,
-        "defaultValue": "On",
-        "validation": null,
-        "systemSettingType": "GENERAL_SETTING",
-        "options": null,
-        "customerLogoImage": null
-      },
-      {
-        "settingId": 2961447,
-        "name": "png",
         "section": "File Settings",
         "type": "Toggle On/Off",
         "maximumLength": 0,
@@ -333,34 +242,6 @@
       {
         "settingId": 2961450,
         "name": "gif",
-        "section": "File Settings",
-        "type": "Toggle On/Off",
-        "maximumLength": 0,
-        "selectedValue": "On",
-        "required": false,
-        "defaultValue": "On",
-        "validation": null,
-        "systemSettingType": "GENERAL_SETTING",
-        "options": null,
-        "customerLogoImage": null
-      },
-      {
-        "settingId": 2961451,
-        "name": "rtf",
-        "section": "File Settings",
-        "type": "Toggle On/Off",
-        "maximumLength": 0,
-        "selectedValue": "On",
-        "required": false,
-        "defaultValue": "On",
-        "validation": null,
-        "systemSettingType": "GENERAL_SETTING",
-        "options": null,
-        "customerLogoImage": null
-      },
-      {
-        "settingId": 2961452,
-        "name": "tiff",
         "section": "File Settings",
         "type": "Toggle On/Off",
         "maximumLength": 0,
