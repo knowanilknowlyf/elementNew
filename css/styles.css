@@ -1,0 +1,318 @@
+/*
+Purpose:Variables
+Author:Anil
+Date:10/10/2020
+*/
+:root {
+  --light-blue: #aa55ff;
+  --dark-blue: #574adc;
+  --default-green: #2fe57c;
+  --default-f-size: 10px;
+  --default-color: #fff;
+  --default-blue: #4105a1;
+}
+
+/*
+Purpose:Default properties
+Author:Anil
+Date:10/10/2020
+*/
+html {
+  font-family: "Montserrat", sans-serif;
+  font-size: var(--default-f-size);
+  font-weight: 900;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+main {
+  position: relative;
+  font-size: 1rem;
+  /* padding-top: 10rem; */
+}
+
+/*
+Purpose:Default classes
+Author:Anil
+Date:10/10/2020
+*/
+.d-flex {
+  display: flex;
+}
+.ai-c {
+  align-items: center;
+}
+.jc-c {
+  justify-content: center;
+}
+.jc-sb {
+  justify-content: space-between;
+}
+.jc-sa {
+  justify-content: space-around;
+}
+.c-pointer {
+  cursor: pointer;
+}
+.d-none {
+  display: none !important;
+}
+.op-0 {
+  opacity: 0;
+}
+.op-1 {
+  opacity: 1!important;
+}
+.w-100 {
+  width: 100%;
+}
+.w-50 {
+  width: 50%;
+}
+/*
+Purpose:Main Header
+Author:Anil
+Date:10/10/2020
+*/
+.main-header {
+  background-image: linear-gradient(
+    0.25turn,
+    var(--dark-blue),
+    var(--light-blue)
+  );
+  min-height: 10rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  color: var(--default-color);
+  padding: 0 25rem 0 15rem;
+  font-family: "Montserrat", sans-serif;
+}
+.main-header .nav-list {
+  list-style: none;
+  min-width: 30rem;
+}
+.main-header .nav-list li {
+  font-weight: 600;
+}
+.main-header .logo span {
+  font-size: 3rem;
+  font-weight: 900;
+}
+/*
+Purpose:Banner
+Author:Anil
+Date:10/10/2020
+*/
+.banner {
+  height: 65rem;
+  width: 100%;
+  background-image: url(../img/Banner.png);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+.main-content {
+  position: absolute;
+  bottom: -2rem;
+  z-index: 2;
+  width: 100%;
+  padding: 0 25rem;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 3px;
+}
+.main-content ul {
+  display: flex;
+  list-style: none;
+}
+.main-content .form-wrapper {
+  background-color: var(--default-color);
+  margin-top: 1rem;
+  padding: 6rem;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+  margin-bottom: 1rem;
+}
+.main-content .form-wrapper .form-details {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-content .form-wrapper .form-details input,
+.main-content .form-wrapper .form-details select {
+  margin: 2rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #e2e2e2;
+  border-radius: 0.3rem;
+  width: 19.1rem;
+  height: 3.5rem;
+}
+.main-content .form-wrapper input.name {
+  width: 44rem;
+}
+.main-content .form-wrapper input.submit {
+  background-color: var(--default-green);
+  color: var(--default-color);
+}
+.main-content ul li {
+  display: flex;
+  align-items: center;
+  color: #2d2d2d;
+  background-color: var(--default-color);
+  padding: 1.3rem 4rem;
+  cursor: pointer;
+}
+.main-content ul li.active {
+  color: var(--default-color);
+  background-color: var(--default-blue);
+}
+.main-content .form-wrapper .fa-exchange {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.main-content .form-control .fa,
+.main-content .form-control .fas {
+  right: 3rem;
+  font-size: 1.5rem;
+  color: #e2e2e2;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.main-content .form-control {
+  position: relative;
+}
+.main-content .form-control label {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 4.8rem;
+}
+.main-content .form-control label input {
+  margin: 0.5rem;
+}
+/*
+Purpose:Flight Details
+Author:Anil
+Date:10/10/2020
+*/
+
+.flight-header {
+  margin-top: 13rem;
+  border: 1px solid var(--default-blue);
+  border-width: 2 0 2 0;
+}
+.flight-details{
+display:none;
+    animation: 5s ease-in-out
+}
+.flight-details-list {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+}
+.flight-details-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--default-blue);
+}
+.flight-details-list li span {
+  font-size: 1.5rem;
+}
+.flight-details-list li a {
+  font-size: 1.5rem;
+  border: 1px solid var(--default-blue);
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+}
+.flight-details-list li span + span {
+  font-size: 0.8rem;
+}
+.f-table-wrapper {
+  padding: 5rem 10rem 0;
+}
+.f-table-wrapper .w-50 {
+  padding: 1rem 5rem 0;
+}
+.f-table-wrapper .w-50:nth-last-of-type(1) {
+  border-left: 2px solid var(--default-blue);
+}
+.f-table-wrapper .w-50 ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  overflow: visible;
+  max-width: 35rem;
+  position: relative;
+  margin-left: 4rem;
+}
+.f-table-wrapper .w-50 ul:before,
+.f-table-wrapper .w-50 ul:after {
+  position: absolute;
+  font-weight: bolder;
+  font-size: 1.4rem;
+  color: var(--default-blue);
+}
+
+.f-table-wrapper .w-50 ul:before {
+  content: "<";
+  left: -1rem;
+}
+.f-table-wrapper .w-50 ul:after {
+  content: ">";
+  right: -1rem;
+}
+
+.f-table-wrapper .w-50 ul li {
+    cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--default-blue);
+  padding: 0.8rem 1.5rem;
+  margin: 0 0.8rem;
+  flex-direction: column;
+  min-width: 10rem;
+}
+.f-table-wrapper .w-50 ul li span {
+  font-size: 0.7rem;
+  color: var(--default-blue);
+}
+.f-table-wrapper .w-50 ul li span + span {
+  font-size: 1rem;
+}
+.f-table-wrapper .w-50 .flight-table {
+  margin-top: 1rem;
+}
+.f-table-wrapper .w-50 .flight-table tr {
+  height: 4rem;
+  color: var(--default-blue);
+}
+.f-table-wrapper .w-50 .flight-table tr td {
+  font-size: 1.1rem;
+  text-align: center;
+}
+.f-table-wrapper .w-50 .flight-table tr td input {
+  margin-right: .5rem;
+  cursor: pointer;
+  }
+.f-table-wrapper .w-50 .flight-table tr th {
+  padding:  0 1rem;
+}
+select {
+    -o-appearance: none;
+    -ms-appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+ }
